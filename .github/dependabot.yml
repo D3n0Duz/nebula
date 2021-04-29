@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: github.com/golang/protobuf
+    versions:
+    - 1.4.3
+    - 1.5.1
+  - dependency-name: github.com/miekg/dns
+    versions:
+    - 1.1.35
+    - 1.1.37
+    - 1.1.38
+    - 1.1.39
+    - 1.1.40
+  - dependency-name: github.com/sirupsen/logrus
+    versions:
+    - 1.7.0
+    - 1.7.1
+    - 1.8.0
+  - dependency-name: github.com/prometheus/client_golang
+    versions:
+    - 1.9.0
+  - dependency-name: github.com/imdario/mergo
+    versions:
+    - 0.3.11
